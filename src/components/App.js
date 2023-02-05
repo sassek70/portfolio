@@ -1,6 +1,6 @@
 import AboutMe from "./AboutMe"
 import Contact from "./Contact"
-import Projects from "./Projects"
+import Blogs from "./Blogs"
 import NavBar from "./NavBar";
 import styled from 'styled-components'
 
@@ -9,7 +9,7 @@ function App() {
     <Background>
       <NavBar />
       <AboutMe />
-      <Projects />
+      <Blogs />
       <Contact/>
     </Background>
   );
@@ -19,7 +19,11 @@ export default App;
 
 const Background = styled.div`
 background-color: grey;
-height: 100vh;
+height: 100%;
 width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
 
 `
+
