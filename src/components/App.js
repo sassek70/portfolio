@@ -3,13 +3,15 @@ import Contact from "./Contact"
 import Blogs from "./Blogs"
 import NavBar from "./NavBar";
 import styled from 'styled-components'
+import Projects from "./Projects";
 
 function App() {
   return (
     <Background>
-      <NavBar />
-      <AboutMe />
-      <Blogs />
+      <NavBar/>
+      <AboutMe/>
+      <Projects/>
+      <Blogs/>
       <Contact/>
     </Background>
   );

@@ -36,8 +36,9 @@ export default Blogs
 
 const BlogsContainer = styled.div`
 border: 2px solid green;
-height: 60vh;
+height: fit-content;
 width: 100vw;
+padding-bottom: 30px;
 `
 
 const CardContainer = styled.div`
