@@ -1,18 +1,17 @@
 import styled from "styled-components"
-import {FaGithub, FaReact} from 'react-icons/fa'
-import {SiRuby, SiRubyonrails} from 'react-icons/si'
+import {FaGithub} from 'react-icons/fa'
+
 
 
 const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
 
-    console.log(image)
     return (
         <Card>
             <h2>{title}</h2>
             <ProjectImage src={image}/>
             <p>{description}</p>
             <TechImagesContainer>
-                <a href={repoLink}><FaGithub size={30} style={{fill: 'black'}}/></a>
+                <Octocat href={repoLink}><FaGithub size={30} style={{fill: 'black'}}/></Octocat>
                 <TechImages>{technologies}</TechImages>
              </TechImagesContainer>
         </Card>
@@ -25,11 +24,14 @@ export default ProjectCard
 
 
 const Card = styled.div`
-max-width: 550px;
-max-height: 300px;
+max-width: 600px;
 border: 2px solid black;
-margin: 5px;
+margin: 10px 15px 10px 15px;
 padding: 5px;
+display: flex;
+flex-direction: column;
+border-radius: 20px;
+align-items: center;
 `
 
 const ProjectImage = styled.img`
@@ -41,15 +43,26 @@ const TechImagesContainer = styled.div`
 border: 2px solid black;
 display: flex;
 flex-direction: row;
+margin-top: auto;
+/* flex: 1; */
+/* flex-basis: content; */
+align-self: center;
 `
 
 const TechImages = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: right;
-flex-grow: 1;
+flex-grow: 2;
+align-self: auto;
 
 `
-const GitHubIcon = styled.a`
-flex-grow: 2;
+
+const Octocat = styled.a`
+display: flex;
+flex-direction: row;
+justify-content: left;
+flex-grow: 1;
+align-self: flex-start;
+
 `
