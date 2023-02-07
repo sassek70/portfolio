@@ -34,7 +34,7 @@ const Blogs = () => {
 
 export default Blogs
 
-const BlogsContainer = styled.div`
+const BlogsContainer = styled.section`
 border: 2px solid green;
 height: fit-content;
 width: 100vw;

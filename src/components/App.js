@@ -8,11 +8,13 @@ import Projects from "./Projects";
 function App() {
   return (
     <Background>
-      <NavBar/>
-      <AboutMe/>
-      <Projects/>
-      <Blogs/>
-      <Contact/>
+      <ComponentContainer>
+        <NavBar/>
+        <AboutMe/>
+        <Projects/>
+        <Blogs/>
+        <Contact/>
+      </ComponentContainer>
     </Background>
   );
 }
@@ -26,6 +28,14 @@ width: 100vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 
+`
+
+const ComponentContainer = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px;
 `
 

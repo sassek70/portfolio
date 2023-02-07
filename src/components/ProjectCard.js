@@ -1,17 +1,20 @@
 import styled from "styled-components"
-import {FaGithub} from 'react-icons/fa'
+import {FaGithub, FaReact} from 'react-icons/fa'
+import {SiRuby, SiRubyonrails} from 'react-icons/si'
 
 
-const ProjectCard = ({title, logo, description, repoLink, url, demoVideo, embedId, technologies}) => {
+const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
 
+    console.log(image)
     return (
         <Card>
             <h2>{title}</h2>
-            <Logo src={`/images/${logo}`}/>
+            <ProjectImage src={image}/>
             <p>{description}</p>
             <TechImagesContainer>
                 <a href={repoLink}><FaGithub size={30} style={{fill: 'black'}}/></a>
-            </TechImagesContainer>
+                <TechImages>{technologies}</TechImages>
+             </TechImagesContainer>
         </Card>
 
     )
@@ -29,13 +32,24 @@ margin: 5px;
 padding: 5px;
 `
 
-const Logo = styled.img`
-max-width: 100px;
-max-height: 100px;
+const ProjectImage = styled.img`
+max-width: 300px;
+max-height: 250px;
 `
 
 const TechImagesContainer = styled.div`
 border: 2px solid black;
 display: flex;
 flex-direction: row;
+`
+
+const TechImages = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: right;
+flex-grow: 1;
+
+`
+const GitHubIcon = styled.a`
+flex-grow: 2;
 `

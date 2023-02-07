@@ -5,8 +5,8 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
     
     const displayProjects = projects.map((project) => {
-        const {title, logo, description, repoLink, url, demoVideo, embedId, technologies} = project
-        return <ProjectCard title={title} logo={logo} description={description} repoLink={repoLink} url={url} demoVideo={demoVideo} embedId={embedId} technologies={technologies}/>
+        const {id, title, image, description, repoLink, url, demoVideo, embedId, technologies} = project
+        return <ProjectCard key={id} title={title} image={image} description={description} repoLink={repoLink} url={url} demoVideo={demoVideo} embedId={embedId} technologies={technologies}/>
     })
     
     return (
@@ -24,7 +24,7 @@ const Projects = () => {
 
 export default Projects
 
-const ProjectsContainer = styled.div`
+const ProjectsContainer = styled.section`
 border: 2px solid green;
 height: fit-content;
 width: 100vw;

@@ -10,7 +10,7 @@ const Contact = () => {
 
 export default Contact
 
-const ContactDetails = styled.div`
+const ContactDetails = styled.section`
 border: 2px solid green;
 height: 50vh;
 width: 50vw;
