@@ -10,7 +10,7 @@ const Projects = () => {
     })
     
     return (
-        <ProjectsContainer>
+        <ProjectsContainer id="projects">
         <h2>
             Projects:
         </h2>
@@ -27,8 +27,9 @@ export default Projects
 const ProjectsContainer = styled.section`
 border: 2px solid green;
 height: fit-content;
-width: 100vw;
+/* width: 100vw; */
 padding-bottom: 30px;
+color: #ffbf30;
 `
 
 const CardContainer = styled.div`

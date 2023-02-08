@@ -1,15 +1,15 @@
 import AboutMe from "./AboutMe"
 import Contact from "./Contact"
 import Blogs from "./Blogs"
-import NavBar from "./NavBar";
+import ScrollToSection from "./ScrollToSection";
 import styled from 'styled-components'
 import Projects from "./Projects";
 
 function App() {
   return (
     <Background>
+      <ScrollToSection/>
       <ComponentContainer>
-        <NavBar/>
         <AboutMe/>
         <Projects/>
         <Blogs/>
@@ -22,7 +22,7 @@ function App() {
 export default App;
 
 const Background = styled.div`
-background-color: grey;
+background-color: #2e1f09;
 height: 100%;
 width: 100vw;
 display: flex;
@@ -37,5 +37,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 30px;
+max-width: 70vw;
 `
 

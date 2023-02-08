@@ -21,7 +21,7 @@ const Blogs = () => {
     })
 
     return(
-        <BlogsContainer>
+        <BlogsContainer id="blogs">
             <h2>
                 Blogs:
             </h2>
@@ -37,8 +37,9 @@ export default Blogs
 const BlogsContainer = styled.section`
 border: 2px solid green;
 height: fit-content;
-width: 100vw;
+/* width: 100vw; */
 padding-bottom: 30px;
+color: #ffbf30;
 `
 
 const CardContainer = styled.div`

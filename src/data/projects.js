@@ -11,7 +11,7 @@ export const projects =[
         url: null,
         demoVideo: '',
         embedId: '',
-        technologies: [<SiJavascript size={30}/>, <SiCss3 size={30}/>],
+        technologies: [<SiJavascript size={40}/>, <SiCss3 size={40}/>],
         tags: []
       },
       {
@@ -23,7 +23,7 @@ export const projects =[
         url: null,
         demoVideo: '',
         embedId: '',
-        technologies: [<FaReact size={30}/>, <SiCss3 size={30}/>, ],
+        technologies: [<FaReact size={40}/>, <SiCss3 size={40}/>, ],
         tags: []
       },
       {
@@ -35,7 +35,7 @@ export const projects =[
         url: null,
         demoVideo: '',
         embedId: '',
-        technologies: [<FaReact size={30}/>, <SiRuby size={30}/>, <SiSqlite size={30}/>, <SiCss3 size={30}/>],
+        technologies: [<FaReact size={40}/>, <SiRuby size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
         tags: [`Sinatra`]
       },
       {
@@ -47,7 +47,7 @@ export const projects =[
         url: null,
         demoVideo: '',
         embedId: '',
-        technologies: [<FaReact size={30}/>, <SiRubyonrails size={30}/>, <SiSqlite size={30}/>, <SiCss3 size={30}/>],
+        technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
         tags: []
       },
       {
@@ -59,7 +59,7 @@ export const projects =[
         url: `https://a-not-so-magical-gathering.onrender.com/home`,
         demoVideo: '',
         embedId: '',
-        technologies: [<FaReact size={30}/>, <SiRubyonrails size={30}/>, <SiPostgresql size={30}/>],
+        technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiPostgresql size={40}/>],
         tags: [`ActionCable`, `Styled-Components`]
       },
     ]

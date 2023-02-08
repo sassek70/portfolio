@@ -9,9 +9,9 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
         <Card>
             <h2>{title}</h2>
             <ProjectImage src={image}/>
-            <p>{description}</p>
+            <Details>{description}</Details>
             <TechImagesContainer>
-                <Octocat href={repoLink}><FaGithub size={30} style={{fill: 'black'}}/></Octocat>
+                <Octocat href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={40}/></Octocat>
                 <TechImages>{technologies}</TechImages>
              </TechImagesContainer>
         </Card>
@@ -25,18 +25,21 @@ export default ProjectCard
 
 const Card = styled.div`
 max-width: 600px;
-border: 2px solid black;
+border: 2px solid #ffbf30;
 margin: 10px 15px 10px 15px;
 padding: 5px;
 display: flex;
 flex-direction: column;
 border-radius: 20px;
 align-items: center;
+color: #ffbf30;
 `
 
 const ProjectImage = styled.img`
 max-width: 300px;
 max-height: 250px;
+border: 2px solid #ffbf30;
+border-radius: 5px;
 `
 
 const TechImagesContainer = styled.div`
@@ -59,10 +62,20 @@ align-self: auto;
 `
 
 const Octocat = styled.a`
+color: #ffbf30;
 display: flex;
 flex-direction: row;
 justify-content: left;
 flex-grow: 1;
 align-self: flex-start;
 
+&:hover {
+    color: #9e710e;
+}
+
+`
+
+const Details = styled.p`
+padding: 10px 20px 5px 20px;
+font-size: 1.25rem;
 `
