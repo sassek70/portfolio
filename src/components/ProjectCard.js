@@ -43,12 +43,10 @@ border-radius: 5px;
 `
 
 const TechImagesContainer = styled.div`
-border: 2px solid black;
 display: flex;
 flex-direction: row;
 margin-top: auto;
-/* flex: 1; */
-/* flex-basis: content; */
+width: 80%;
 align-self: center;
 `
 
@@ -58,7 +56,6 @@ flex-direction: row;
 justify-content: right;
 flex-grow: 2;
 align-self: auto;
-
 `
 
 const Octocat = styled.a`
@@ -72,7 +69,6 @@ align-self: flex-start;
 &:hover {
     color: #9e710e;
 }
-
 `
 
 const Details = styled.p`

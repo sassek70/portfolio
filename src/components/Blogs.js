@@ -23,7 +23,7 @@ const Blogs = () => {
     return(
         <BlogsContainer id="blogs">
             <h2>
-                Blogs:
+                Sometimes I write things, check them out!
             </h2>
             <CardContainer>
                 {displayArticles}
@@ -35,9 +35,7 @@ const Blogs = () => {
 export default Blogs
 
 const BlogsContainer = styled.section`
-border: 2px solid green;
 height: fit-content;
-/* width: 100vw; */
 padding-bottom: 30px;
 color: #ffbf30;
 `

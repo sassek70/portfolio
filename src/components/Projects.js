@@ -12,7 +12,7 @@ const Projects = () => {
     return (
         <ProjectsContainer id="projects">
         <h2>
-            Projects:
+            My most recent projects:
         </h2>
         <CardContainer>
             {displayProjects}
@@ -25,9 +25,7 @@ const Projects = () => {
 export default Projects
 
 const ProjectsContainer = styled.section`
-border: 2px solid green;
 height: fit-content;
-/* width: 100vw; */
 padding-bottom: 30px;
 color: #ffbf30;
 `

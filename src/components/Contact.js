@@ -21,19 +21,16 @@ const Contact = () => {
 export default Contact
 
 const ContactDetails = styled.section`
-border: 2px solid green;
 display: flex;
 height: 100vh;
-padding: 100px;
-/* width: 50vw; */
 color:  #ffbf30 ;
 justify-content: center;
 align-items: center;
 `
 const Details = styled.div`
-padding: 30px;
 max-width: 500px;
 font-size: 1.5rem;
+top: 50%;
 `
 
 const Icon = styled.a`

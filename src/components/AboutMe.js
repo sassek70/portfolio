@@ -16,11 +16,9 @@ const AboutMe = () => {
 export default AboutMe
 
 const AboutMeDetails = styled.section`
-border: 2px solid green;
 display: flex;
 height: 100vh;
-padding: 100px;
-/* width: 50vw; */
+padding: 100p;
 color:  #ffbf30 ;
 justify-content: center;
 align-items: center;
