@@ -9,7 +9,7 @@ export const projects =[
       "This is my Flatiron School capstone project. 1v1 battle card game developed with React.js and Ruby on Rails, uses ActionCable to connect two players through websockets. Note: This application may take up to a minute to come online, the hosting service shutsdown the server after a period of inactivitiy. The Leaderboard page will be populated with users when the server is active.",
     repoLink: 'https://github.com/sassek70/A-Not-So-Magical-Gathering',
     url: `https://a-not-so-magical-gathering.onrender.com/home`,
-    demoVideo: '',
+    demoVideo: 'https://www.youtube.com/watch?v=_-PMFrPuN9w',
     embedId: '',
     technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiPostgresql size={40}/>],
     tags: [`ActionCable`, `Styled-Components`]
@@ -21,7 +21,7 @@ export const projects =[
       "Pair-programming project developed with React.js and a Rails API. This event tracking application allows users to maintain a list of upcoming events.",
     repoLink: 'https://github.com/sassek70/Spotlight',
     url: null,
-    demoVideo: '',
+    demoVideo: 'https://www.youtube.com/watch?v=oG05bcJTjrc',
     embedId: '',
     technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: []
@@ -31,9 +31,9 @@ export const projects =[
     image: '/images/Cookbook.png',
     description:
       "Developed using React.js, Ruby and utilizes Sinatra and a SQlite3 database.",
-    repoLink: 'pending',
+    repoLink: 'https://github.com/sassek70/Cookbook',
     url: null,
-    demoVideo: '',
+    demoVideo: 'https://www.youtube.com/watch?v=pnFSFwb66XU',
     embedId: '',
     technologies: [<FaReact size={40}/>, <SiRuby size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: [`Sinatra`]
@@ -45,7 +45,7 @@ export const projects =[
       "Developed as a pair-programming project in React.js, this application allows a user to see the stats of the all active NFL Quarterbacks as of 10/24/2022.",
     repoLink: 'https://github.com/sassek70/phase-2-project',
     url: null,
-    demoVideo: '',
+    demoVideo: 'https://www.youtube.com/watch?v=mXP7M-BshJs',
     embedId: '',
     technologies: [<FaReact size={40}/>, <SiCss3 size={40}/>, ],
     tags: []
@@ -57,7 +57,7 @@ export const projects =[
       "A web application to discover breweries and track the ones you have visited",
     repoLink: 'https://github.com/sassek70/Phase-1-Project',
     url: null,
-    demoVideo: '',
+    demoVideo: 'https://www.youtube.com/watch?v=VQPtINf1xg8',
     embedId: '',
     technologies: [<SiJavascript size={40}/>, <SiCss3 size={40}/>],
     tags: []

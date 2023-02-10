@@ -11,7 +11,7 @@ const Contact = () => {
                     <Icon href='https://dev.to/sassek70' target='_blank' rel='noreferrer'><FaDev size={40}/></Icon>
                     <Icon href='https://github.com/sassek70' target='_blank' rel='noreferrer'><FaGithub size={40}/></Icon>
                 </LinkContainer>
-
+                <Resume as='a' href=''>Resume</Resume>
 
             </Details>
         </ContactDetails>
@@ -28,6 +28,10 @@ justify-content: center;
 align-items: center;
 `
 const Details = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 max-width: 500px;
 font-size: 1.5rem;
 top: 50%;
@@ -45,6 +49,28 @@ const LinkContainer = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
+`
+
+const Resume = styled.a`
+padding: 10px 30px;
+margin-top: 15px;
+background-color: #2e1f09;
+color: #ffbf30;
+text-decoration: none;
+border: 2px solid #ffbf30;
+border-radius: 20px;
+overflow: hidden;
+transition: 0.5s;
+cursor: pointer;
+
+&:hover{
+    background: #9e710e;
+    color: #2e1f09;
+    box-shadow: 0 0 5px 1px #ffbf30,
+                0 0 15px 1px #ffbf30,
+                0 0 30px 1px #9e710e,
+                0 0 50px 1px #9e710e;
+}
 `
 
 

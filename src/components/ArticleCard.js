@@ -23,6 +23,8 @@ display: flex;
 flex-direction: column;
 border-radius: 20px;
 align-items: center;
+box-shadow: 0px 0px 10px 1px;
+
 `
 
 
