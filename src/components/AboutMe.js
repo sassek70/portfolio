@@ -10,10 +10,10 @@ const AboutMe = () => {
         <AboutMeDetails id="about-me">
                 <MyImage src='/images/me.jpg'/>
             <Details>
-                <h2>About me</h2>
+                <H2>About me</H2>
                 <p>Welcome! I'm Kevin, a full-stack web developer and recent graduate of Flatiron School. I transitioned into the software engineering field
                 after a combined 8 years of field work and Project Management in the Telecommunications industry. </p>
-                <h3>What I'm currently learning:</h3>
+                <H3>What I'm currently learning:</H3>
                 <TechImages>
                     {nowLearning}
                 </TechImages>
@@ -35,13 +35,21 @@ justify-content: center;
 align-items: center;
 `
 
+// const MyImage = styled.img`
+// flex-wrap: wrap;
+// width: 100%;
+// min-height: 100vh;
+// border: 2px solid #ffbf30;
+// border-radius: 5px;
+// box-shadow: 0px 0px 10px 1px;
+// `
+
 const MyImage = styled.img`
 max-width: 500px;
 max-height: 450px;
 border: 2px solid #ffbf30;
 border-radius: 5px;
 box-shadow: 0px 0px 10px 1px;
-
 `
 
 const Details = styled.div`
@@ -57,4 +65,12 @@ justify-content: center;
 flex-grow: 2;
 align-self: auto;
 column-gap: 20px;
+`
+
+const H2 = styled.h2`
+color: #fdebd0;
+`
+
+const H3 = styled.h3`
+color: #fdebd0;
 `

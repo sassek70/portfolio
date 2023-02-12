@@ -11,9 +11,9 @@ const Projects = () => {
     
     return (
         <ProjectsContainer id="projects">
-        <h2>
+        <H2>
             My most recent projects:
-        </h2>
+        </H2>
         <CardContainer>
             {displayProjects}
         </CardContainer>
@@ -35,4 +35,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+`
+
+const H2 = styled.h2`
+color: #fdebd0;
 `

@@ -25,8 +25,26 @@ border-radius: 20px;
 align-items: center;
 box-shadow: 0px 0px 10px 1px;
 
-`
+&:hover {
+    background-color: #ba4a00;
+    border-color: #ffbf30;
+    transition-duration: 0.75s;
+    color: #fdebd0;
+}
 
+&:hover h3 {
+    color: #2e1f09;
+    transition-duration: 0.75s;
+
+}
+
+&:hover a {
+    color: #2e1f09;
+    transition-duration: 0.75s;
+
+}
+
+`
 
 const Details = styled.p`
 padding: 10px 20px 5px 20px;
@@ -37,6 +55,13 @@ color: #ffbf30;
 padding: 5px;
 
 &:hover {
-    color: #9e710e;
+    color: #2e1f09;
+
 }
 `
+
+
+
+// #9e710e -- dark
+// #ffbf30 -- light
+// #2e1f09 -- background

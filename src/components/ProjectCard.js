@@ -27,6 +27,15 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
 
 export default ProjectCard
 
+const TechImages = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: right;
+flex-grow: 2;
+align-self: auto;
+column-gap: 10px;
+`
+
 
 const Card = styled.div`
 max-width: 600px;
@@ -39,7 +48,33 @@ border-radius: 20px;
 align-items: center;
 color: #ffbf30;
 box-shadow: 0px 0px 10px 1px;
+
+&:hover {
+    background-color: #ba4a00;
+    border-color: #ffbf30;
+    transition-duration: 0.75s;
+    color: #fdebd0;
+}
+
+&:hover h2 {
+    color: #2e1f09;
+    transition-duration: 0.75s;
+
+}
+
+&:hover a {
+    color: #2e1f09;
+    transition-duration: 0.75s;
+
+}
+
+&:hover ${TechImages} {
+    color: #2e1f09;
+    transition-duration: 0.75s;
+}
+
 `
+
 
 const ProjectImage = styled.img`
 max-width: 300px;
@@ -56,17 +91,10 @@ width: 80%;
 align-self: center;
 `
 
-const TechImages = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: right;
-flex-grow: 2;
-align-self: auto;
-column-gap: 10px;
-`
+
 
 const LinkIcon = styled.a`
-color: #ffbf30;
+color: inherit;
 display: flex;
 flex-direction: row;
 justify-content: left;
@@ -74,7 +102,7 @@ flex-grow: 1;
 align-self: flex-start;
 
 &:hover {
-    color: #9e710e;
+    color: #ffbf30;
     /* background: #9e710e;
     color: #2e1f09;
     border-radius: 60px;

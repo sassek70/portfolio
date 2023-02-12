@@ -52,6 +52,6 @@ const LinksIcon = styled.div`
 color: #ffbf30;
 
 &:hover {
-    color: #9e710e;
+    color: #fdebd0;
 }
 `

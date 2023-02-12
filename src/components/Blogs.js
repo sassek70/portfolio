@@ -12,7 +12,6 @@ const Blogs = () => {
     .then(articleList => setArticles(articleList))
     },[])
 
-    console.log(articles)
 
     const displayArticles = articles.map((article) => {
         const {title, url, id, description, tags, reading_time_minutes} = article
@@ -22,9 +21,9 @@ const Blogs = () => {
 
     return(
         <BlogsContainer id="blogs">
-            <h2>
+            <H2>
                 Sometimes I write things, check them out!
-            </h2>
+            </H2>
             <CardContainer>
                 {displayArticles}
             </CardContainer>
@@ -45,4 +44,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+`
+
+const H2 = styled.h2`
+color: #fdebd0;
 `
