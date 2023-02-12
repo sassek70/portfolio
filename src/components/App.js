@@ -26,8 +26,8 @@ background-color: #2e1f09;
 height: 100%;
 width: 100vw;
 display: flex;
-flex-direction: column;
-justify-content: center;
+flex-direction: row;
+/* justify-content: center; */
 align-items: center;
 
 `
@@ -37,6 +37,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 30px;
-max-width: 70vw;
+/* width: 100%; */
+flex-grow: 1;
 `
 

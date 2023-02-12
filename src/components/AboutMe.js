@@ -28,29 +28,31 @@ const AboutMeDetails = styled.section`
 display: flex;
 flex-direction: row;
 column-gap: 40px;
-height: 100vh;
-padding: 100p;
+min-height: 100vh;
+padding: 10px;
 color:  #ffbf30 ;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
+min-height: 100vh;
+/* width: 100%; */
 `
 
-// const MyImage = styled.img`
-// flex-wrap: wrap;
-// width: 100%;
-// min-height: 100vh;
-// border: 2px solid #ffbf30;
-// border-radius: 5px;
-// box-shadow: 0px 0px 10px 1px;
-// `
-
 const MyImage = styled.img`
+width: 100%;
 max-width: 500px;
-max-height: 450px;
 border: 2px solid #ffbf30;
 border-radius: 5px;
 box-shadow: 0px 0px 10px 1px;
 `
+
+// const MyImage = styled.img`
+// max-width: 500px;
+// max-height: 450px;
+// border: 2px solid #ffbf30;
+// border-radius: 5px;
+// box-shadow: 0px 0px 10px 1px;
+// `
 
 const Details = styled.div`
 padding: 30px;

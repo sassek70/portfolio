@@ -17,7 +17,7 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
                     <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={40}/></LinkIcon>
                     <LinkIcon href={demoVideo} target='_blank' rel='noreferrer'><IoLogoYoutube size={40}/></LinkIcon>
                 </LinksContainer>
-                <TechImages>{technologies}</TechImages>
+                <TechImages>{technologies(40)}</TechImages>
              </TechImagesContainer>
         </Card>
 
@@ -28,6 +28,10 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
 export default ProjectCard
 
 const TechImages = styled.div`
+svg{
+    height: 20px;
+    width: 20px;
+}
 display: flex;
 flex-direction: row;
 justify-content: right;
@@ -40,7 +44,7 @@ column-gap: 10px;
 const Card = styled.div`
 max-width: 600px;
 border: 2px solid #ffbf30;
-margin: 10px 15px 10px 15px;
+/* margin: 10px 15px 10px 15px; */
 padding: 5px;
 display: flex;
 flex-direction: column;
@@ -81,6 +85,7 @@ max-width: 300px;
 max-height: 250px;
 border: 2px solid #ffbf30;
 border-radius: 5px;
+width: 100%;
 `
 
 const TechImagesContainer = styled.div`

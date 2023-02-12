@@ -17,14 +17,14 @@ const ScrollToSection = () => {
 export default ScrollToSection
 
 const ScrollButtons = styled.nav`
-position: fixed;
+position: sticky;
 height: 50px;
-top: 10px;
+top: 0;
 display: flex;
 flex-direction: column;
 align-self: flex-start;
 min-height: 20vh;
-left: 3vw;
+padding: 10px;
 row-gap: 10px;
 `
 

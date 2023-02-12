@@ -17,7 +17,7 @@ export default ArticleCard
 const Card = styled.div`
 max-width: 500px;
 border: 2px solid #ffbf30;
-margin: 10px 15px 10px 15px;
+/* margin: 10px 15px 10px 15px; */
 padding: 5px;
 display: flex;
 flex-direction: column;
