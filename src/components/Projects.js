@@ -6,18 +6,18 @@ const Projects = () => {
     
     const displayProjects = projects.map((project) => {
         const {id, title, image, description, repoLink, url, demoVideo, embedId, technologies} = project
-        return <ProjectCard key={id} title={title} image={image} description={description} repoLink={repoLink} url={url} demoVideo={demoVideo} embedId={embedId} technologies={technologies}/>
+        return <ProjectCard key={id} id={id} title={title} image={image} description={description} repoLink={repoLink} url={url} demoVideo={demoVideo} embedId={embedId} technologies={technologies}/>
     })
     
     return (
         <ProjectsContainer id="projects">
-        <H2>
-            My most recent projects:
-        </H2>
-        <CardContainer>
-            {displayProjects}
-        </CardContainer>
-    </ProjectsContainer>
+            <H2>
+                My most recent projects:
+            </H2>
+            <CardContainer>
+                {displayProjects}
+            </CardContainer>
+        </ProjectsContainer>
 
     )
 }
@@ -35,6 +35,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+row-gap: 20px;
+column-gap: 20px;
 `
 
 const H2 = styled.h2`

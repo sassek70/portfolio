@@ -4,19 +4,23 @@ import {IoChatboxEllipsesSharp} from 'react-icons/io5'
 
 export const icons = [
         {
-            iconImage: <BsInfoSquare size={30} />,
+            id: 1,
+            iconImage: (size) => <BsInfoSquare size={size}/>,
             section: "about-me"
         },
         {
-            iconImage: <RiCodeSSlashFill size={30}/>,
+            id: 2,
+            iconImage: (size) => <RiCodeSSlashFill size={size}/>,
             section: "projects"
         },
         {
-            iconImage: <RiArticleLine size={30}/>,
+            id: 3,
+            iconImage: (size) => <RiArticleLine size={size}/>,
             section: "blogs"
         },
         {
-            iconImage: <IoChatboxEllipsesSharp size={30}/>,
+            id: 4,
+            iconImage: (size) => <IoChatboxEllipsesSharp size={size}/>,
             section: "contact"
         },
     ]

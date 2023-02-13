@@ -1,10 +1,21 @@
+import { useContext } from 'react'
 import styled from 'styled-components'
-import {SiNextdotjs, SiTypescript} from 'react-icons/si'
-import { FaAws } from 'react-icons/fa'
+import { ResolutionContext } from '../context/ResolutionContext'
+import { nowLearning } from '../data/nowLearning'
+
 
 const AboutMe = () => {
+    const {iconSize} = useContext(ResolutionContext)
+    
+    let displayIcons = nowLearning.map(element => {
+        const {id, icon} = element
+        return ( 
+            <TechImage key={id} iconSize={iconSize}>
+                {icon}
+            </TechImage>
 
-    const nowLearning = [<SiNextdotjs size={30}/>, <SiTypescript size={30}/>, <FaAws size={30}/>]
+        )
+    })
 
     return(
         <AboutMeDetails id="about-me">
@@ -15,7 +26,7 @@ const AboutMe = () => {
                 after a combined 8 years of field work and Project Management in the Telecommunications industry. </p>
                 <H3>What I'm currently learning:</H3>
                 <TechImages>
-                    {nowLearning}
+                    {displayIcons}
                 </TechImages>
             </Details>
         </AboutMeDetails>
@@ -28,29 +39,37 @@ const AboutMeDetails = styled.section`
 display: flex;
 flex-direction: row;
 column-gap: 40px;
-height: 100vh;
-padding: 100p;
+min-height: 100vh;
+padding: 10px;
 color:  #ffbf30 ;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
+min-height: 100vh;
+/* width: 100%; */
 `
 
-// const MyImage = styled.img`
-// flex-wrap: wrap;
-// width: 100%;
-// min-height: 100vh;
-// border: 2px solid #ffbf30;
-// border-radius: 5px;
-// box-shadow: 0px 0px 10px 1px;
-// `
-
 const MyImage = styled.img`
+width: 100%;
 max-width: 500px;
-max-height: 450px;
 border: 2px solid #ffbf30;
 border-radius: 5px;
 box-shadow: 0px 0px 10px 1px;
 `
+
+const TechImage = styled.div`
+svg{
+    height: ${props => (props.iconSize)}px;
+    width: ${props => (props.iconSize)}px;
+}
+`
+// const MyImage = styled.img`
+// max-width: 500px;
+// max-height: 450px;
+// border: 2px solid #ffbf30;
+// border-radius: 5px;
+// box-shadow: 0px 0px 10px 1px;
+// `
 
 const Details = styled.div`
 padding: 30px;

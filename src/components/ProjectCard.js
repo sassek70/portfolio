@@ -1,10 +1,22 @@
 import styled from "styled-components"
 import {FaGithub} from 'react-icons/fa'
 import { IoLogoYoutube } from "react-icons/io5"
+import { useContext } from "react"
+import { ResolutionContext } from "../context/ResolutionContext"
 
 
 
-const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
+const ProjectCard = ({id, title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
+    const {iconSize} = useContext(ResolutionContext)
+
+    let displayTechnologies = technologies.map((technology, index) => {
+        return (
+            <div key={index}>
+                {technology}
+            </div>
+        )}
+    )
+    // console.log(technologies)
 
     return (
         <Card>
@@ -14,10 +26,10 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
             </Details>
             <TechImagesContainer>
                 <LinksContainer>
-                    <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={40}/></LinkIcon>
-                    <LinkIcon href={demoVideo} target='_blank' rel='noreferrer'><IoLogoYoutube size={40}/></LinkIcon>
+                    <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></LinkIcon>
+                    <LinkIcon href={demoVideo} target='_blank' rel='noreferrer'><IoLogoYoutube size={iconSize}/></LinkIcon>
                 </LinksContainer>
-                <TechImages>{technologies}</TechImages>
+                <TechImages key={id} iconSize={iconSize}>{displayTechnologies}</TechImages>
              </TechImagesContainer>
         </Card>
 
@@ -28,6 +40,10 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
 export default ProjectCard
 
 const TechImages = styled.div`
+svg{
+    height: ${props => (props.iconSize)}px;
+    width: ${props => (props.iconSize)}px;
+}
 display: flex;
 flex-direction: row;
 justify-content: right;
@@ -40,7 +56,8 @@ column-gap: 10px;
 const Card = styled.div`
 max-width: 600px;
 border: 2px solid #ffbf30;
-margin: 10px 15px 10px 15px;
+/* margin: 10px 15px 10px 15px; */
+/* margin-top: 10px; */
 padding: 5px;
 display: flex;
 flex-direction: column;
@@ -81,6 +98,7 @@ max-width: 300px;
 max-height: 250px;
 border: 2px solid #ffbf30;
 border-radius: 5px;
+width: 100%;
 `
 
 const TechImagesContainer = styled.div`

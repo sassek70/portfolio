@@ -11,7 +11,8 @@ export const projects =[
     url: `https://a-not-so-magical-gathering.onrender.com/home`,
     demoVideo: 'https://www.youtube.com/watch?v=_-PMFrPuN9w',
     embedId: '',
-    technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiPostgresql size={40}/>],
+    // technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiPostgresql size={40}/>],
+    technologies: [<FaReact />, <SiRubyonrails />, <SiPostgresql />],
     tags: [`ActionCable`, `Styled-Components`]
   },
   {
@@ -23,7 +24,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=oG05bcJTjrc',
     embedId: '',
-    technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
+    technologies: [<FaReact />, <SiRubyonrails />, <SiSqlite />, <SiCss3 />],
+    // technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: []
   },
   {
@@ -35,7 +37,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=pnFSFwb66XU',
     embedId: '',
-    technologies: [<FaReact size={40}/>, <SiRuby size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
+    technologies: [<FaReact />, <SiRuby />, <SiSqlite />, <SiCss3 />],
+    // technologies: [<FaReact size={40}/>, <SiRuby size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: [`Sinatra`]
   },
   {
@@ -47,7 +50,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=mXP7M-BshJs',
     embedId: '',
-    technologies: [<FaReact size={40}/>, <SiCss3 size={40}/>, ],
+    technologies: [<FaReact />, <SiCss3 />, ],
+    // technologies: [<FaReact size={40}/>, <SiCss3 size={40}/>, ],
     tags: []
   }, 
   {
@@ -59,7 +63,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=VQPtINf1xg8',
     embedId: '',
-    technologies: [<SiJavascript size={40}/>, <SiCss3 size={40}/>],
+    technologies: [<SiJavascript />, <SiCss3 />],
+    // technologies: [<SiJavascript size={40}/>, <SiCss3 size={40}/>],
     tags: []
   }
 ]

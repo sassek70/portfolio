@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import {BsChevronDoubleDown, BsChevronDoubleUp} from 'react-icons/bs'
 import styled from 'styled-components'
+import { ResolutionContext } from '../context/ResolutionContext'
 
 
-const ScrollIcons = ({iconImage, section}) => {
+
+const ScrollIcons = ({iconImage, section, }) => {
     const [isHovered, setIsHovered] = useState(false)
     const [iconElement, setIconElement] = useState()
     const [iconElementYLocation, setIconElementYLocation] = useState()
+    const {iconSize} = useContext(ResolutionContext)
 
     useEffect(() => {
         setIconElement(document.getElementById(section))
@@ -29,14 +32,14 @@ const ScrollIcons = ({iconImage, section}) => {
         <LinksIcon as='a' href='/' onClick={(e) =>handleClick(e)}>
             {isHovered ? 
                 iconElementYLocation > 1 ? 
-                    <BsChevronDoubleDown size={30}/> 
+                    <BsChevronDoubleDown size={iconSize}/> 
                 : 
                     iconElementYLocation < (0-1) ? 
-                        <BsChevronDoubleUp size={30}/>
+                        <BsChevronDoubleUp size={iconSize}/>
                     :
-                        iconImage
+                        iconImage(iconSize) 
                 :
-                iconImage
+                iconImage(iconSize)
             }   
         </LinksIcon>
         </div>
@@ -49,9 +52,17 @@ const ScrollIcons = ({iconImage, section}) => {
 export default ScrollIcons
 
 const LinksIcon = styled.div`
+/* svg{
+    height: ${props => (props.iconSize)}px;
+    width: ${props => (props.iconSize)}px;
+} */
 color: #ffbf30;
 
 &:hover {
+    /* svg{
+        height: ${props => (props.iconSize)}px;
+        width: ${props => (props.iconSize)}px;
+    } */
     color: #fdebd0;
 }
 `
