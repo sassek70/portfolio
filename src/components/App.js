@@ -4,11 +4,15 @@ import Blogs from "./Blogs"
 import ScrollToSection from "./ScrollToSection";
 import styled from 'styled-components'
 import Projects from "./Projects";
+import { useContext } from "react";
+import { ResolutionContext } from "../context/ResolutionContext";
 
 function App() {
+  const {width} = useContext(ResolutionContext)
+
   return (
     <Background>
-      <ScrollToSection/>
+      {width < 800 ? null : <ScrollToSection/>}
       <ComponentContainer>
         <AboutMe/>
         <Projects/>
@@ -36,8 +40,13 @@ const ComponentContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 30px;
+/* padding: 30px; */
+/* padding: 30px 100px 30px 100px; */
+/* @media screen { */
+  
+/* } */
+
 /* width: 100%; */
-flex-grow: 1;
+/* flex-grow: 1; */
 `
 

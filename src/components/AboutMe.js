@@ -1,20 +1,22 @@
+import { useContext } from 'react'
 import styled from 'styled-components'
+import { ResolutionContext } from '../context/ResolutionContext'
 import { nowLearning } from '../data/nowLearning'
 
 
 const AboutMe = () => {
+    const {iconSize} = useContext(ResolutionContext)
     
     let displayIcons = nowLearning.map(element => {
         const {id, icon} = element
         return ( 
-            <div key={id}>
+            <TechImage key={id} iconSize={iconSize}>
                 {icon}
-            </div>
+            </TechImage>
 
         )
     })
 
-    console.log(nowLearning[0].index)
     return(
         <AboutMeDetails id="about-me">
                 <MyImage src='/images/me.jpg'/>
@@ -34,11 +36,6 @@ const AboutMe = () => {
 export default AboutMe
 
 const AboutMeDetails = styled.section`
-svg{
-    height: ${props => (props.iconSize)}px;
-    width: ${props => (props.iconSize)}px;
-
-}
 display: flex;
 flex-direction: row;
 column-gap: 40px;
@@ -60,6 +57,12 @@ border-radius: 5px;
 box-shadow: 0px 0px 10px 1px;
 `
 
+const TechImage = styled.div`
+svg{
+    height: ${props => (props.iconSize)}px;
+    width: ${props => (props.iconSize)}px;
+}
+`
 // const MyImage = styled.img`
 // max-width: 500px;
 // max-height: 450px;

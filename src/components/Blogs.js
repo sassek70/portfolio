@@ -44,6 +44,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+column-gap: 20px;
+row-gap: 20px;
 `
 
 const H2 = styled.h2`

@@ -35,6 +35,8 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+row-gap: 20px;
+column-gap: 20px;
 `
 
 const H2 = styled.h2`

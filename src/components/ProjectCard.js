@@ -57,6 +57,7 @@ const Card = styled.div`
 max-width: 600px;
 border: 2px solid #ffbf30;
 /* margin: 10px 15px 10px 15px; */
+/* margin-top: 10px; */
 padding: 5px;
 display: flex;
 flex-direction: column;

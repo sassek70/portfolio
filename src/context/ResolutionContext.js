@@ -6,25 +6,24 @@ const ResolutionContext = React.createContext()
 
 const ResolutionProvider = ({children}) => {
     const [iconSize, setIconSize] = useState()
+    const [width, setWidth] = useState()
 
     useEffect(() => {
 
-      let width = window.screen.availWidth
+      let screenResWidth = window.screen.availWidth
+      setWidth(window.screen.availWidth)
 
-      let sizes = [20, 30, 40]
-      if(width < 600){
-        setIconSize(sizes[0])
-      } else if(width < 1000) {
-        setIconSize(sizes[1])
+      if(screenResWidth < 1000){
+        setIconSize(30)
       } else {
-        setIconSize(sizes[2])
+        setIconSize(40)
       }
 
     },[])
 
 
     return ( 
-        <ResolutionContext.Provider value={{iconSize}}>
+        <ResolutionContext.Provider value={{iconSize, width}}>
             {children}
         </ResolutionContext.Provider>
         )
