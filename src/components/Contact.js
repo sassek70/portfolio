@@ -1,15 +1,19 @@
 import styled from 'styled-components'
 import {FaLinkedin, FaGithub, FaDev} from 'react-icons/fa'
+import { useContext } from 'react'
+import { ResolutionContext } from '../context/ResolutionContext'
 
 const Contact = () => {
+    const {iconSize} = useContext(ResolutionContext)
+
     return(
         <ContactDetails id="contact">
             <Details>
                 <h2>Let's Connect!</h2>
                 <LinkContainer>
-                    <Icon href='https://www.linkedin.com/in/kevin-sasse/' target='_blank' rel='noreferrer'><FaLinkedin size={40}/></Icon>
-                    <Icon href='https://dev.to/sassek70' target='_blank' rel='noreferrer'><FaDev size={40}/></Icon>
-                    <Icon href='https://github.com/sassek70' target='_blank' rel='noreferrer'><FaGithub size={40}/></Icon>
+                    <Icon href='https://www.linkedin.com/in/kevin-sasse/' target='_blank' rel='noreferrer'><FaLinkedin size={iconSize}/></Icon>
+                    <Icon href='https://dev.to/sassek70' target='_blank' rel='noreferrer'><FaDev size={iconSize}/></Icon>
+                    <Icon href='https://github.com/sassek70' target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></Icon>
                 </LinkContainer>
                 <Resume as='a' href=''>Resume</Resume>
 

@@ -1,10 +1,22 @@
 import styled from "styled-components"
 import {FaGithub} from 'react-icons/fa'
 import { IoLogoYoutube } from "react-icons/io5"
+import { useContext } from "react"
+import { ResolutionContext } from "../context/ResolutionContext"
 
 
 
-const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
+const ProjectCard = ({id, title, image, description, repoLink, url, demoVideo, embedId, technologies}) => {
+    const {iconSize} = useContext(ResolutionContext)
+
+    let displayTechnologies = technologies.map((technology, index) => {
+        return (
+            <div key={index}>
+                {technology}
+            </div>
+        )}
+    )
+    // console.log(technologies)
 
     return (
         <Card>
@@ -14,10 +26,10 @@ const ProjectCard = ({title, image, description, repoLink, url, demoVideo, embed
             </Details>
             <TechImagesContainer>
                 <LinksContainer>
-                    <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={40}/></LinkIcon>
-                    <LinkIcon href={demoVideo} target='_blank' rel='noreferrer'><IoLogoYoutube size={40}/></LinkIcon>
+                    <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></LinkIcon>
+                    <LinkIcon href={demoVideo} target='_blank' rel='noreferrer'><IoLogoYoutube size={iconSize}/></LinkIcon>
                 </LinksContainer>
-                <TechImages>{technologies(40)}</TechImages>
+                <TechImages key={id} iconSize={iconSize}>{displayTechnologies}</TechImages>
              </TechImagesContainer>
         </Card>
 
@@ -29,8 +41,8 @@ export default ProjectCard
 
 const TechImages = styled.div`
 svg{
-    height: 20px;
-    width: 20px;
+    height: ${props => (props.iconSize)}px;
+    width: ${props => (props.iconSize)}px;
 }
 display: flex;
 flex-direction: row;

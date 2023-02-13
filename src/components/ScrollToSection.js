@@ -5,7 +5,7 @@ import ScrollIcons from './ScrollIcons'
 
 const ScrollToSection = () => {
 
-    const displayIcons = icons.map((icon) => <ScrollIcons iconImage={icon.iconImage} section={icon.section}/>)
+    const displayIcons = icons.map((icon) => <ScrollIcons key={icon.id} iconImage={icon.iconImage} section={icon.section}/> )
 
     return (
         <ScrollButtons>
@@ -24,7 +24,7 @@ display: flex;
 flex-direction: column;
 align-self: flex-start;
 min-height: 20vh;
-padding: 10px;
+padding: 30px 40px;
 row-gap: 10px;
 `
 

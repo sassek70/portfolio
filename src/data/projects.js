@@ -12,8 +12,7 @@ export const projects =[
     demoVideo: 'https://www.youtube.com/watch?v=_-PMFrPuN9w',
     embedId: '',
     // technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiPostgresql size={40}/>],
-    technologies: (size) => [<FaReact size={size}/>, <SiRubyonrails size={size}/>, <SiPostgresql size={size}/>],
-
+    technologies: [<FaReact />, <SiRubyonrails />, <SiPostgresql />],
     tags: [`ActionCable`, `Styled-Components`]
   },
   {
@@ -25,7 +24,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=oG05bcJTjrc',
     embedId: '',
-    technologies: (size) => [<FaReact size={size}/>, <SiRubyonrails size={size}/>, <SiSqlite size={size}/>, <SiCss3 size={size}/>],
+    technologies: [<FaReact />, <SiRubyonrails />, <SiSqlite />, <SiCss3 />],
+    // technologies: [<FaReact size={40}/>, <SiRubyonrails size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: []
   },
   {
@@ -37,7 +37,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=pnFSFwb66XU',
     embedId: '',
-    technologies: (size) => [<FaReact size={size}/>, <SiRuby size={size}/>, <SiSqlite size={size}/>, <SiCss3 size={size}/>],
+    technologies: [<FaReact />, <SiRuby />, <SiSqlite />, <SiCss3 />],
+    // technologies: [<FaReact size={40}/>, <SiRuby size={40}/>, <SiSqlite size={40}/>, <SiCss3 size={40}/>],
     tags: [`Sinatra`]
   },
   {
@@ -49,7 +50,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=mXP7M-BshJs',
     embedId: '',
-    technologies: (size) => [<FaReact size={size}/>, <SiCss3 size={size}/>, ],
+    technologies: [<FaReact />, <SiCss3 />, ],
+    // technologies: [<FaReact size={40}/>, <SiCss3 size={40}/>, ],
     tags: []
   }, 
   {
@@ -61,7 +63,8 @@ export const projects =[
     url: null,
     demoVideo: 'https://www.youtube.com/watch?v=VQPtINf1xg8',
     embedId: '',
-    technologies: (size) => [<SiJavascript size={size}/>, <SiCss3 size={size}/>],
+    technologies: [<SiJavascript />, <SiCss3 />],
+    // technologies: [<SiJavascript size={40}/>, <SiCss3 size={40}/>],
     tags: []
   }
 ]

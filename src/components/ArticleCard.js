@@ -1,13 +1,17 @@
 import styled from "styled-components"
 import {FaDev} from 'react-icons/fa'
+import { useContext } from "react"
+import { ResolutionContext } from "../context/ResolutionContext"
 
 const ArticleCard = ({title, url, id, description, tags, reading_time_minutes}) => {
+    const {iconSize} = useContext(ResolutionContext)
+
     return (
         <Card>
             <h3>{title}</h3>
             <Details>{description}</Details>
             <Details>tags: {tags} {reading_time_minutes} min</Details>
-            <Links href={url} target='_blank' rel='noreferrer'><FaDev size={40}/></Links>
+            <Links href={url} target='_blank' rel='noreferrer'><FaDev size={iconSize}/></Links>
         </Card>
     )
 }
