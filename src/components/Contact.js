@@ -16,7 +16,6 @@ const Contact = () => {
                     <Icon href='https://github.com/sassek70' target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></Icon>
                 </LinkContainer>
                 <Resume as='a' href='https://docs.google.com/document/d/1iJ-_F2vxVT5DK0R0_7n2zTgr1pLZkdXIDAHE7eHtf2E'>Resume</Resume>
-
             </Details>
         </ContactDetails>
     )

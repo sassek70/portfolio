@@ -52,17 +52,9 @@ const ScrollIcons = ({iconImage, section, }) => {
 export default ScrollIcons
 
 const LinksIcon = styled.div`
-/* svg{
-    height: ${props => (props.iconSize)}px;
-    width: ${props => (props.iconSize)}px;
-} */
 color: #ffbf30;
 
 &:hover {
-    /* svg{
-        height: ${props => (props.iconSize)}px;
-        width: ${props => (props.iconSize)}px;
-    } */
     color: #fdebd0;
 }
 `

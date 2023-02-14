@@ -28,25 +28,17 @@ export default App;
 const Background = styled.div`
 background-color: #2e1f09;
 height: 100%;
-width: 100vw;
 display: flex;
 flex-direction: row;
-/* justify-content: center; */
 align-items: center;
-
 `
 
 const ComponentContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-/* padding: 30px; */
-/* padding: 30px 100px 30px 100px; */
-/* @media screen { */
-  
-/* } */
-
-/* width: 100%; */
-/* flex-grow: 1; */
 `
 
+// #9e710e -- dark
+// #ffbf30 -- light
+// #2e1f09 -- background

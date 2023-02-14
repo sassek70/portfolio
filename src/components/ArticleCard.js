@@ -21,7 +21,6 @@ export default ArticleCard
 const Card = styled.div`
 max-width: 500px;
 border: 2px solid #ffbf30;
-/* margin: 10px 15px 10px 15px; */
 padding: 5px;
 display: flex;
 flex-direction: column;
@@ -39,15 +38,12 @@ box-shadow: 0px 0px 10px 1px;
 &:hover h3 {
     color: #2e1f09;
     transition-duration: 0.75s;
-
 }
 
 &:hover a {
     color: #2e1f09;
     transition-duration: 0.75s;
-
 }
-
 `
 
 const Details = styled.p`
@@ -60,12 +56,5 @@ padding: 5px;
 
 &:hover {
     color: #2e1f09;
-
 }
 `
-
-
-
-// #9e710e -- dark
-// #ffbf30 -- light
-// #2e1f09 -- background

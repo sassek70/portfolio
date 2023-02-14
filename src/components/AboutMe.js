@@ -46,7 +46,6 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 min-height: 100vh;
-/* width: 100%; */
 `
 
 const MyImage = styled.img`
@@ -63,14 +62,6 @@ svg{
     width: ${props => (props.iconSize)}px;
 }
 `
-// const MyImage = styled.img`
-// max-width: 500px;
-// max-height: 450px;
-// border: 2px solid #ffbf30;
-// border-radius: 5px;
-// box-shadow: 0px 0px 10px 1px;
-// `
-
 const Details = styled.div`
 padding: 30px;
 max-width: 500px;

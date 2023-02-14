@@ -56,8 +56,6 @@ column-gap: 10px;
 const Card = styled.div`
 max-width: 600px;
 border: 2px solid #ffbf30;
-/* margin: 10px 15px 10px 15px; */
-/* margin-top: 10px; */
 padding: 5px;
 display: flex;
 flex-direction: column;
@@ -121,13 +119,6 @@ align-self: flex-start;
 
 &:hover {
     color: #ffbf30;
-    /* background: #9e710e;
-    color: #2e1f09;
-    border-radius: 60px;
-    box-shadow: 0 0 5px 1px #ffbf30,
-                0 0 15px 1px #ffbf30,
-                0 0 30px 1px #9e710e,
-                0 0 50px 1px #9e710e; */
 }
 `
 
