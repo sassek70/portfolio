@@ -3,6 +3,7 @@ import {SiRuby, SiRubyonrails, SiJavascript, SiPostgresql, SiCss3, SiSqlite} fro
 
 export const projects =[
   {
+    id: 1,
     title: 'A Not So Magical Gathering',
     image: '/images/ANSMG.png',
     description:
@@ -15,6 +16,7 @@ export const projects =[
     tags: [`ActionCable`, `Styled-Components`]
   },
   {
+    id: 2,
     title: 'Spotlight',
     image: '/images/Spotlight.png',
     description:
@@ -27,6 +29,7 @@ export const projects =[
     tags: []
   },
   {
+    id: 3,
     title: 'Cookbook',
     image: '/images/Cookbook.png',
     description:
@@ -39,6 +42,7 @@ export const projects =[
     tags: [`Sinatra`]
   },
   {
+    id: 4,
     title: 'Quarterback Stat Tracker',
     image: '/images/QBStatTracker.png',
     description:
@@ -51,6 +55,7 @@ export const projects =[
     tags: []
   }, 
   {
+    id: 5,
     title: 'Brewery Locator',
     image: '/images/Brew.png',
     description:

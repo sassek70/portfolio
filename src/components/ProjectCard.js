@@ -22,8 +22,10 @@ const ProjectCard = ({id, title, image, description, repoLink, url, demoVideo, e
         <Card>
             <h2>{title}</h2>
             <ProjectImage src={image}/>
-            <Details>{description}
-            </Details>
+            <Details>{description}</Details>
+            <DeployLink>
+                {url ? <LinkIcon href={url} target='_blank' rel='noreferrer'>Deployed link</LinkIcon> : null}    
+            </DeployLink>
             <TechImagesContainer>
                 <LinksContainer>
                     <LinkIcon href={repoLink} target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></LinkIcon>
@@ -105,9 +107,8 @@ flex-direction: row;
 margin-top: auto;
 width: 80%;
 align-self: center;
+justify-content: center;
 `
-
-
 
 const LinkIcon = styled.a`
 color: inherit;
@@ -132,4 +133,8 @@ column-gap: 10px;
 const Details = styled.p`
 padding: 10px 20px 5px 20px;
 font-size: 1.25rem;
+`
+
+const DeployLink = styled.div`
+padding-top: 10px;
 `
