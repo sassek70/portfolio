@@ -15,7 +15,7 @@ const Contact = () => {
                     <Icon href='https://dev.to/sassek70' target='_blank' rel='noreferrer'><FaDev size={iconSize}/></Icon>
                     <Icon href='https://github.com/sassek70' target='_blank' rel='noreferrer'><FaGithub size={iconSize}/></Icon>
                 </LinkContainer>
-                <Resume as='a' href='https://docs.google.com/document/d/1iJ-_F2vxVT5DK0R0_7n2zTgr1pLZkdXIDAHE7eHtf2E'>Resume</Resume>
+                <Resume as='a' href='https://docs.google.com/document/d/14bWmdC2SpvKi1FyEOjhnbnPUsKPy8cnYTqo9jfDIkQg/edit?usp=sharing'>Resume</Resume>
             </Details>
         </ContactDetails>
     )
